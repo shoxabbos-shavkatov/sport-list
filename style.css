@@ -1,0 +1,72 @@
+body {
+	background-image: url(background-image.jpg);
+}
+form {
+	display: flex;
+	background-color: #8C9CAA;
+	flex-direction: column;
+	width:300px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+}
+label {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+
+}
+.sport-names {
+	margin-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.controller {
+	display: inline-block;
+	width:30px;
+	height: 30px;
+	border-radius: 50px;
+	/*background-color: lightblue;*/
+}
+.tennis:focus + .controller {
+	background-image: url(tennis.png);
+	background-size: cover;
+}
+.tennis:checked +.controller{
+		background-image: url(tennis.png);
+	background-size: cover;
+	background-color: lightblue;
+}
+.football:disabled +.controller{
+	background-image: url(football.png);
+	background-size: cover;
+	opacity: 0.3;
+}
+.basketball:checked +.controller{
+	background-image: url(basketball.png);
+	background-size: cover;
+	background-color: lightblue;
+}
+.basketball:focus +.controller{
+	background-image: url(basketball.png);
+	background-size: cover;
+}
+.hokkey:focus+.controller {
+	background-image: url(hokkey.svg);
+	background-size: cover;
+}
+.hokkey:checked+.controller {
+	background-image: url(hokkey.svg);
+	background-size: cover;
+	background-color: lightblue;
+}
